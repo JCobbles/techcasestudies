@@ -2,7 +2,7 @@
 title: UCL Test CS Projects
 email: cob.mossy@gmail.com
 # description: 
-baseurl: "/projects" # the subpath of your site, e.g. /blog/
+baseurl: "/techcasestudies" # the subpath of your site, e.g. /blog/
 url: "https://jcobbles.github.io" # the base hostname & protocol for your site
 twitter_username: dcaro
 github_username:  microsoft
