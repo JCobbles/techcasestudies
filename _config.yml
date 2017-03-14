@@ -1,9 +1,9 @@
 # Site settings
-title: Microsoft Technical Case Studies
-email: dcaro@microsoft.com
+title: UCL Test CS Projects
+email: cob.mossy@gmail.com
 # description: 
-baseurl: "/techcasestudies" # the subpath of your site, e.g. /blog/
-url: "https://microsoft.github.io" # the base hostname & protocol for your site
+baseurl: "/projects" # the subpath of your site, e.g. /blog/
+url: "https://jcobbles.github.io" # the base hostname & protocol for your site
 twitter_username: dcaro
 github_username:  microsoft
 encoding: utf-8
