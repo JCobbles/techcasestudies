@@ -17,6 +17,7 @@
             "excerpt"    : "{{ post.excerpt | escape | strip_newlines }}",
             "authors"    : "{{ post.authors | join: ', ' }}",
             "image"      : "{{ post.image }}"
+            "score"      : "{{ post.score }}"
 		} {% if forloop.last %}{% else %},{% endif %}
 	{% endfor %}
 ]
