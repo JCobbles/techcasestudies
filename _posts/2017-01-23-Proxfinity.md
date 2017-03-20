@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "How Azure services can help Proxfinity migrate from retiring Parse"
-author: "Martin Schray"
+authors: "Martin Schray"
 author-link: "#"
 #author-image: "{{ site.baseurl }}/images/Proxfinity/AuthorsPhoto350.png"
 date:   2017-01-23
