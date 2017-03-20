@@ -6,7 +6,7 @@
     {
         "id": "{{ post.id | slugify }}",
         "categories": {{ post.categories | jsonify }},
-        "author": {{ post.author  | jsonify }},
+        "authors": {{ post.authors  | jsonify }},
         "title": {{ post.title  | jsonify }},
         "excerpt": {{ post.excerpt  | jsonify }},
         "verticals": {{ post.verticals | jsonify }},
