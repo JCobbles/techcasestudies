@@ -18,6 +18,6 @@
             "authors"    : "{{ post.authors | join: ', ' }}",
             "image"      : "{{ post.image }}"
             "score"      : "{{ post.score }}"
-		} {% if forloop.last %}{% else %},{% endif %}
+		} {% if forloop.last %}{% else %}{% endif %}
 	{% endfor %}
 ]
