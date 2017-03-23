@@ -1,6 +1,6 @@
 ---
 ---
-[
+
 	{% for post in site.posts %}
 		{
             "id"         : "{{ post.id }}",
@@ -20,4 +20,4 @@
             "score"      : "{{ post.score }}"
 		} {% if forloop.last %}{% else %},{% endif %}
 	{% endfor %}
-]
+
