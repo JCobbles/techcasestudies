@@ -6,7 +6,7 @@
     {
         "id"        :  {{ post.id | slugify }},
         "url"       :  {{ post.url | prepend: site.baseurl }},
-        "category"  :  {{ post.category }},
+        "category"  :  {{ post.category | jsonify }},
         "authors"   :  {{ post.authors  | jsonify }},
         "title"     :  {{ post.title  | escape | jsonify }},
         "tags"      :  {{ post.tags | jsonify }},
