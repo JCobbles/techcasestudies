@@ -1,23 +1,21 @@
 ---
 ---
+
 [
-	{% for post in site.posts %}
-		{
-            "id"         : "{{ post.id }}",
-            "title"      : "{{ post.title | escape }}",
-            "category"   : "{{ post.category }}",
-            "tags"       : "{{ post.tags | join: ', ' }}",
-            "url"        : "{{ post.url }}",
-            "path"       : "{{ post.path }}",
-            "next"       : "{{ post.next.url }}",
-            "previous"   : "{{ post.previous.url }}",
-            "date"       : "{{ post.date }}",
-            "shortdate"  : "{{ post.date | date : '%B %d, %Y' }}",
-            "content"    : "{{ post.content | escape | strip_newlines }}",
-            "excerpt"    : "{{ post.excerpt | escape | strip_newlines }}",
-            "authors"    : "{{ post.authors | join: ', ' }}",
-            "image"      : "{{ post.image }}"
-            "score"      : "{{ post.score }}"
-		} {% if forloop.last %}{% else %},{% endif %}
-	{% endfor %}
+    {% for post in site.posts %}
+    {
+        "id":       "{{ post.id | slugify }}",
+        "url":      "{{ post.url }}",
+        "category": "{{ post.category }}",
+        "authors":  "{{ post.authors  | jsonify }}",
+        "title":    "{{ post.title  | escape | jsonify }}",
+        "tags":      {{ post.tags | join: ', ' |jsonify}},
+        "excerpt":   {{ post.excerpt  | jsonify }},
+        "module":    {{ post.module | jsonify }},
+        "date":      {{ post.date |jsonify}},
+        "shortdate": "{{ post.date | date : '%B %d, %Y' }}",
+        "image":     {{ post.image | jsonify}},
+        "score":     {{ post.score | jsonify}},
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
 ]
