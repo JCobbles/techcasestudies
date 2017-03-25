@@ -10,12 +10,10 @@
         "title": {{ post.title  | jsonify }},
         "tags": {{ post.tags | join: ', ' |jsonify}},
         "excerpt": {{ post.excerpt  | jsonify }},
-        "verticals": {{ post.verticals | jsonify }},
-        "language": {{ post.language | jsonify }},
+        "module": {{ post.module | jsonify }},
         "date": {{ post.date |jsonify}},
         "image": {{ post.image | jsonify}},
         "score": {{ post.score | jsonify}},
-        "content": {{ post.content | strip_html | jsonify }}
     }{% unless forloop.last %},{% endunless %}
     {% endfor %}
 ]
