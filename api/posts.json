@@ -12,7 +12,7 @@
         "tags"      :  "{{ post.tags | join: ', ' | jsonify}}",
         "excerpt"   :  "{{ post.excerpt  | jsonify }}",
         "module"    :  "{{ post.module | jsonify }}",
-        "date"      :  "{{ post.date | jsonify}},
+        "date"      :  "{{ post.date | jsonify}}",
         "shortdate" :  "{{ post.date | date : '%B %d, %Y' }}",
         "image"     :  "{{ post.image | jsonify | prepend: site.baseurl}}",
         "score"     :  "{{ post.score | jsonify}}",
