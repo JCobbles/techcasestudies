@@ -9,6 +9,7 @@
         "category"  :  "{{ post.category }}",
         "authors"   :  {{ post.authors | jsonify }},
         "title"     :  "{{ post.title  | escape }}",
+        "client"    :  "{{ post.client | escape }}",
         "tags"      :  {{ post.tags | jsonify }},
         "excerpt"   :  "{{ post.excerpt }}",
         "module"    :  "{{ post.module }}",
