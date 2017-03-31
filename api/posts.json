@@ -17,6 +17,7 @@
         "shortdate" :  "{{ post.date | date : '%B %d, %Y' }}",
         "image"     :  "{{ post.image | prepend: site.baseurl | prepend: site.url }}",
         "score"     :  "{{ post.score }}"
+        "youtube"   :  "{{ post.youtube }}"
     }{% unless forloop.last %},{% endunless %}
     {% endfor %}
 ]
